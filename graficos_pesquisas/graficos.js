@@ -45,3 +45,26 @@ google.charts.load("current", {packages:["corechart"]});
     var chart = new google.visualization.ColumnChart(document.getElementById('perguntaXY'));
     chart.draw(data, options);
 }
+
+// Gráfico de barras
+
+google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart7);
+    function drawChart7() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Questao');
+    data.addColumn('number', 'Respostas');
+    data.addRows([
+      ["Sim", 1],  // exemplo de linha
+    ]);
+
+    var options = {
+      colors: [''], // cor das linhas
+      bars: 'horizontal',
+      backgroundColor: "#4a8450",
+      legend: "none",
+    };
+
+    var chart = new google.visualization.BarChart(document.getElementById('perguntaXYZ'));
+    chart.draw(data, options);
+}
