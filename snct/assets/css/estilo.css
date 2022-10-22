@@ -141,6 +141,27 @@
     letter-spacing: 1.5px;
 }
 
+.rodape__conteiner__lista {
+    list-style-type: none;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+
+    margin-top: 1rem;
+}
+
+.rodape__conteiner__lista__item {
+    background: #075d10;
+    border-radius: 30px;
+    padding: .4rem;
+}
+
+.rodape__conteiner__lista__item__link {
+    display: flex;
+}
+
 @media screen and (min-width: 1200px) {
     .principal__secao__conteiner-botoes__botao {
         width: 25rem;
